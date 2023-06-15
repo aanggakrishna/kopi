@@ -310,7 +310,12 @@ with col2:
     st.write("Dengan menggunakan pendekatan ini didapat bahwa nilai export kopi indonesia berada pada :")
 with col3: 
     st.metric(hasil_isp_label, hasil_isp, delta=None, delta_color="normal", help=None, label_visibility="visible")
-
+with st.expander("Lihat Data Tabel"):
+    st.write(""""1. Tahap Pengenalan
+    2. Tahap Subtitusi Impor
+    3. Tahap Pertumbuhan
+    4. Tahap Kematangan
+    5. Tahap kembali mengimpor""")
 with st.container():
     st.title('Komsumsi Kopi di Dalam negeri')
     st.write('_dalam liter_')
